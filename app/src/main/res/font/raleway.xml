@@ -1,0 +1,84 @@
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <font
+        app:font="@font/raleway_black"
+        app:fontStyle="normal"
+        app:fontWeight="900" />
+    <font
+        app:font="@font/raleway_black_italic"
+        app:fontStyle="italic"
+        app:fontWeight="900" />
+
+    <font
+        app:font="@font/raleway_extra_bold"
+        app:fontStyle="normal"
+        app:fontWeight="800" />
+    <font
+        app:font="@font/raleway_extra_bold_italic"
+        app:fontStyle="italic"
+        app:fontWeight="800" />
+
+    <font
+        app:font="@font/raleway_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+    <font
+        app:font="@font/raleway_bold_italic"
+        app:fontStyle="italic"
+        app:fontWeight="700" />
+
+    <font
+        app:font="@font/raleway_semi_bold"
+        app:fontStyle="normal"
+        app:fontWeight="600" />
+    <font
+        app:font="@font/raleway_semi_bold_italic"
+        app:fontStyle="italic"
+        app:fontWeight="600" />
+
+    <font
+        app:font="@font/raleway_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+    <font
+        app:font="@font/raleway_medium_italic"
+        app:fontStyle="italic"
+        app:fontWeight="500" />
+
+    <font
+        app:font="@font/raleway_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        app:font="@font/raleway_italic"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+
+    <font
+        app:font="@font/raleway_light"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        app:font="@font/raleway_light_italic"
+        app:fontStyle="italic"
+        app:fontWeight="300" />
+
+    <font
+        app:font="@font/raleway_extra_light"
+        app:fontStyle="normal"
+        app:fontWeight="200" />
+    <font
+        app:font="@font/raleway_extra_light_italic"
+        app:fontStyle="italic"
+        app:fontWeight="200" />
+
+    <font
+        app:font="@font/raleway_thin"
+        app:fontStyle="normal"
+        app:fontWeight="100" />
+    <font
+        app:font="@font/raleway_thin_italic"
+        app:fontStyle="italic"
+        app:fontWeight="100" />
+
+</font-family>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_reply"
+        android:icon="@drawable/ic_reply_24dp"
+        android:title="@string/read_menu_reply"
+        app:showAsAction="ifRoom" />
+
+</menu>

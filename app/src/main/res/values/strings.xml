@@ -1,0 +1,152 @@
+<resources>
+    <!--Application Label-->
+    <string name="application_label">OneShot</string>
+
+    <!--Activity Titles-->
+    <string name="compose_activity_title">Compose</string>
+    <string name="contact_activity_title">Contact</string>
+    <string name="contacts_activity_title">Contacts</string>
+    <string name="mailbox_activity_title">OneShot</string>
+    <string name="read_activity_title">Read</string>
+    <string name="settings_activity_title">Settings</string>
+
+    <string name="intent_share_title">Share</string>
+
+    <!--Onboarding-->
+    <string name="onboarding_title_fos">Free and Open Source</string>
+    <string name="onboarding_fos">OneShot is not only free to use, it\'s source code is publicly available for anyone to
+        audit and modify.
+    </string>
+    <string name="onboarding_title_secure">Secure</string>
+    <string name="onboarding_secure">OneShot messages are encrypted with NIST-approved cryptographic algorithms.\n\nIn
+        OneShot we use a hybrid cryptographic scheme with multiple ciphers of different types, each to it\'s best
+        advantage.
+    </string>
+    <string name="onboarding_title_anonymous">Anonymous</string>
+    <string name="onboarding_anonymous">Participants in OneShot communication are anonymous.\n\nFurthermore, messages
+        are deleted immediately after they are read, hence the name &#8211; OneShot.
+    </string>
+    <string name="onboarding_title_keyguard">Screen Lock</string>
+    <string name="onboarding_keyguard">You can help secure your device by setting a screen lock either using a PIN,
+        pattern, password, or biometric authentication.
+    </string>
+
+    <!--Navigation Drawer-->
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="navigation_drawer_message">Message</string>
+    <string name="navigation_drawer_compose">Compose</string>
+    <string name="navigation_drawer_contacts">Contacts</string>
+    <string name="navigation_drawer_account">Account</string>
+    <string name="navigation_drawer_reset">Reset</string>
+    <string name="navigation_drawer_copy">Copy to clipboard</string>
+    <string name="navigation_drawer_share">Share</string>
+    <string name="navigation_drawer_qr_code_view">View QR code</string>
+    <string name="navigation_drawer_qr_code_scan">Scan QR code</string>
+    <string name="navigation_drawer_settings">Settings</string>
+
+    <!--Compose Activity Options Menu-->
+    <string name="compose_menu_send">Send</string>
+
+    <!--Contact Activity Options Menu-->
+    <string name="contact_menu_save">Save</string>
+    <string name="contact_menu_delete">Delete</string>
+
+    <!--Read Activity Options Menu-->
+    <string name="read_menu_reply">Reply</string>
+
+    <!--Messages-->
+    <string name="message_no_unread_messages">No unread messages.</string>
+    <string name="message_no_contacts">No contacts.</string>
+
+    <string name="hint_edit_text_recipient">Recipient</string>
+    <string name="hint_edit_text_subject">Subject</string>
+    <string name="hint_edit_text_message">Message</string>
+
+    <string name="reply_edit_text_subject" formatted="false">Re: %s</string>
+    <string name="reply_edit_text_message" formatted="false">%n%nOn %s, %s wrote:%n%n%s</string>
+
+    <string name="hint_edit_text_contact">Contact</string>
+    <string name="hint_edit_text_alias">Alias</string>
+
+    <string name="progress_dialog_loading">Loading…</string>
+    <string name="progress_dialog_sending">Sending…</string>
+
+    <string name="alert_dialog_reset">Do you want to delete all unread messages, delete all cryptographic keys, delete
+        anonymous user account and sign out of the app?
+    </string>
+    <!--<string name="alert_dialog_reset">Do you want to delete all unread messages, delete all cryptographic keys, delete
+        anonymous user account, sign out of the app and notify all your contacts you have been compromised?!
+    </string>-->
+    <string name="alert_dialog_compose_send">Send message?</string>
+    <string name="alert_dialog_compose_discard">Discard message?</string>
+    <string name="alert_dialog_contact">Delete contact?</string>
+
+    <string name="toast_error">An error has occurred.</string>
+    <string name="toast_copied_to_clipboard">Copied to clipboard.</string>
+    <string name="toast_account_id_copied_to_clipboard">Account identifier has been copied to clipboard.</string>
+
+    <string name="notification_message_title">OneShot</string>
+
+    <string name="notification_channel_new_message_name">New message</string>
+    <string name="notification_channel_new_message_description">Notification settings</string>
+
+    <string name="qr_code_scanner_prompt">Place recipient\'s QR code inside the viewfinder to scan it.</string>
+
+    <string name="oneshot_share" formatted="false">Join me on OneShot, a secure, free and open-source messaging app. My
+        OneShot contact is: %s. Download the app at https://one.shot/.
+        %n&#8211; OneShot
+    </string>
+
+    <string name="oneshot_welcome_message">Hi,
+        %nThank you for installing OneShot. This is an automated message sent to introduce you with the main features of
+        OneShot.
+        %nAs you may already know, OneShot is {one-time} Android text messaging app with focus on anonymity, privacy and
+        end-to-end security. Participants in communication are anonymized, where each have unique randomly generated
+        identifier. Prior to sending a message, sender must know recipient\'s identifier. Identifiers can be shared from
+        the app. As a convenience, identifiers can be encoded as a QR code and scanned with another OneShot app. If you
+        wish, you can also add frequent contacts to the app contact storage. OneShot messages are fully encrypted, once
+        read, they will be permanently deleted.
+        %nFor more information, please visit https://one.shot/.
+        %n&#8211; OneShot
+    </string>
+
+    <!--Settings-->
+    <string name="pref_category_security_title">Security</string>
+    <string name="pref_confirm_device_credentials_title">Confirm credentials</string>
+    <string name="pref_confirm_device_credentials_summary">Prompt for device PIN, pattern, password, or biometric
+        authentication on application start &#8211; if enabled on device
+    </string>
+
+    <string name="pref_category_compose_title">Compose</string>
+    <string name="pref_confirm_message_send_title">Confirm message send</string>
+    <string name="pref_confirm_message_send_summary">Prompt for confirmation when sending messages</string>
+    <string name="pref_confirm_message_discard_title">Confirm message discard</string>
+    <string name="pref_confirm_message_discard_summary">Prompt for confirmation when discarding messages</string>
+
+    <string name="pref_category_appearance_title">Appearance</string>
+    <string name="pref_use_night_mode_title">Use night mode</string>
+    <!--<string name="pref_use_night_mode_summary">Set the default night mode</string>-->
+    <string name="pref_use_night_mode_summary">%s</string>
+    <string name="pref_use_night_mode_entry_yes">Always</string>
+    <string name="pref_use_night_mode_entry_no">Never</string>
+    <string name="pref_use_night_mode_entry_auto">Auto</string>
+    <!--<string name="pref_use_night_mode_entry_follow_system">Follow system</string>-->
+
+    <string name="pref_category_advanced_title">Advanced</string>
+    <string name="pref_delete_read_messages_title">Delete read messages</string>
+    <string name="pref_delete_read_messages_summary">Delete messages after reading &#8211; both from server and device
+    </string>
+
+    <!--Common-->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="skip">Skip</string>
+    <string name="loading">Loading…</string>
+    <string name="signing_in">Signing in…</string>
+
+</resources>

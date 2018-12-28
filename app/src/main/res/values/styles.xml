@@ -1,0 +1,73 @@
+<resources>
+    <!--Main Theme-->
+    <style name="OneShotTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:colorBackground">@color/primaryLight</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <!--Onboarding Theme-->
+    <style name="OneShotTheme.NoActionBar.Fullscreen" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:colorBackground">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <!--Activity Theme-->
+    <style name="OneShotTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="OneShotTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="OneShotTheme.PopupOverlay" parent="ThemeOverlay.AppCompat" />
+
+    <!--Settings Activity Theme-->
+    <style name="OneShotTheme.Settings" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:colorBackground">@color/primaryLight</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="android:fontFamily">@font/raleway</item>
+
+        <item name="alertDialogTheme">@style/OneShotTheme.DialogOverlay</item>
+        <item name="dialogTheme">@style/OneShotTheme.DialogOverlay</item>
+    </style>
+
+    <!--Dialog Overlay-->
+    <style name="OneShotTheme.DialogOverlay" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/primaryLight</item>
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <!--QR Code Dialog Overlay-->
+    <style name="OneShotTheme.DialogOverlay.QrCode" parent="ThemeOverlay.AppCompat.Dialog">
+        <!--<item name="colorAccent">@color/accent</item>-->
+        <item name="android:windowBackground">@color/primaryDark</item>
+    </style>
+
+    <!--Divider-->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <!--Custom Font: Medium Size-->
+    <style name="OneShotTheme.Text.Medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <!--Custom Font: Large Size-->
+    <style name="OneShotTheme.Text.Large" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+</resources>

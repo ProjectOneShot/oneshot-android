@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_category_security_title">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_fingerprint_24dp"
+            android:key="confirm_device_credentials"
+            android:summary="@string/pref_confirm_device_credentials_summary"
+            android:title="@string/pref_confirm_device_credentials_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_compose_title">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="confirm_message_send"
+            android:summary="@string/pref_confirm_message_send_summary"
+            android:title="@string/pref_confirm_message_send_title" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="confirm_message_discard"
+            android:summary="@string/pref_confirm_message_discard_summary"
+            android:title="@string/pref_confirm_message_discard_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_appearance_title">
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/entries_appearance_use_night_mode"
+            android:entryValues="@array/entry_values_appearance_use_night_mode"
+            android:icon="@drawable/ic_invert_colors_24dp"
+            android:key="use_night_mode"
+            android:summary="@string/pref_use_night_mode_summary"
+            android:title="@string/pref_use_night_mode_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_advanced_title">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_delete_24dp"
+            android:key="delete_read_messages"
+            android:summary="@string/pref_delete_read_messages_summary"
+            android:title="@string/pref_delete_read_messages_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<resources>
+    <string-array name="entries_appearance_use_night_mode">
+        <item>@string/pref_use_night_mode_entry_yes</item>
+        <item>@string/pref_use_night_mode_entry_no</item>
+        <item>@string/pref_use_night_mode_entry_auto</item>
+        <!--<item>@string/pref_use_night_mode_entry_follow_system</item>-->
+    </string-array>
+
+    <string-array name="entry_values_appearance_use_night_mode">
+        <!--MODE_NIGHT_YES-->
+        <item>2</item>
+        <!--MODE_NIGHT_NO-->
+        <item>1</item>
+        <!--MODE_NIGHT_AUTO-->
+        <item>0</item>
+        <!--MODE_NIGHT_FOLLOW_SYSTEM-->
+        <item>-1</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="default_spacing">16dp</dimen>
+    <dimen name="half_spacing">8dp</dimen>
+
+    <dimen name="fab_margin">@dimen/default_spacing</dimen>
+</resources>

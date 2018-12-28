@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ContactActivity"
+    tools:showIn="@layout/activity_contact">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_uid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:hint="@string/hint_edit_text_contact"
+            android:padding="@dimen/default_spacing"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearance" />
+
+        <View style="@style/Divider" />
+
+        <EditText
+            android:id="@+id/edit_text_alias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:hint="@string/hint_edit_text_alias"
+            android:padding="@dimen/default_spacing"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearance" />
+
+        <View style="@style/Divider" />
+
+    </LinearLayout>
+
+</ScrollView>

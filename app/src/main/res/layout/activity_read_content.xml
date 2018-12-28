@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ReadActivity"
+    tools:showIn="@layout/activity_read">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="@dimen/default_spacing"
+            android:singleLine="true" />
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:id="@+id/text_view_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="@dimen/default_spacing"
+            android:singleLine="true" />
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:id="@+id/text_view_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="@dimen/default_spacing"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="application.oneshot">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+
+    <application
+        android:name=".OneShotApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/application_label"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/OneShotTheme">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_oneshot_black_24dp"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/accent"/>
+
+        <activity android:name=".BaseActivity"/>
+        <activity android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AuthActivity"
+            android:theme="@style/OneShotTheme.NoActionBar.Fullscreen"/>
+        <activity
+            android:name=".ComposeActivity"
+            android:label="@string/compose_activity_title"
+            android:parentActivityName=".MailboxActivity"
+            android:theme="@style/OneShotTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="compose"
+                    android:scheme="oneshot"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactActivity"
+            android:label="@string/contact_activity_title"
+            android:parentActivityName=".ContactsActivity"
+            android:theme="@style/OneShotTheme.NoActionBar"/>
+        <activity
+            android:name=".ContactsActivity"
+            android:label="@string/contacts_activity_title"
+            android:parentActivityName=".MailboxActivity"
+            android:theme="@style/OneShotTheme.NoActionBar"/>
+        <activity
+            android:name=".MailboxActivity"
+            android:label="@string/mailbox_activity_title"
+            android:theme="@style/OneShotTheme.NoActionBar"/>
+        <activity
+            android:name=".OnboardingActivity"
+            android:theme="@style/OneShotTheme.NoActionBar.Fullscreen"/>
+        <activity
+            android:name=".ReadActivity"
+            android:label="@string/read_activity_title"
+            android:parentActivityName=".MailboxActivity"
+            android:theme="@style/OneShotTheme.NoActionBar"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings_activity_title"
+            android:parentActivityName=".MailboxActivity"
+            android:theme="@style/OneShotTheme.Settings"/>
+
+        <service android:name=".services.FirebaseMessagingServiceExtension">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.FirebaseJobServiceExtension"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

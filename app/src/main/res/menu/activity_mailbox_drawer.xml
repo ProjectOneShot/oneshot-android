@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/navigation_drawer_message">
+        <menu>
+            <item
+                android:id="@+id/nav_message_compose"
+                android:icon="@drawable/ic_create_24dp"
+                android:title="@string/navigation_drawer_compose" />
+            <item
+                android:id="@+id/nav_message_contacts"
+                android:icon="@drawable/ic_person_24dp"
+                android:title="@string/navigation_drawer_contacts" />
+        </menu>
+    </item>
+
+    <item android:title="@string/navigation_drawer_account">
+        <menu>
+            <item
+                android:id="@+id/nav_account_reset"
+                android:icon="@drawable/ic_person_outline_24dp"
+                android:title="@string/navigation_drawer_reset" />
+
+            <item
+                android:id="@+id/nav_account_copy"
+                android:icon="@drawable/ic_content_copy_24dp"
+                android:title="@string/navigation_drawer_copy" />
+
+            <item
+                android:id="@+id/nav_account_share"
+                android:icon="@drawable/ic_share_24dp"
+                android:title="@string/navigation_drawer_share" />
+
+            <item
+                android:id="@+id/nav_account_qr_code_view"
+                android:icon="@drawable/ic_border_clear_24dp"
+                android:title="@string/navigation_drawer_qr_code_view" />
+
+            <item
+                android:id="@+id/nav_account_qr_code_scan"
+                android:icon="@drawable/ic_photo_camera_24dp"
+                android:title="@string/navigation_drawer_qr_code_scan" />
+        </menu>
+    </item>
+
+    <item android:title="@string/navigation_drawer_settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings_settings"
+                android:icon="@drawable/ic_settings_24dp"
+                android:title="@string/navigation_drawer_settings" />
+        </menu>
+    </item>
+
+</menu>
